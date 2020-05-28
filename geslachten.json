@@ -1,5 +1,4 @@
-[
-    {
+[{
         "forename": "Noah",
         "name": "Smith",
         "gender": "man",
@@ -58,5 +57,11 @@
         "name": "Taylor",
         "gender": "vrouw",
         "picture": "vrouw5.jpg"
+    },
+    {
+        "forename": "some guy",
+        "name": "some name",
+        "gender": "man",
+        "picture": "man4.jpg"
     }
 ]
