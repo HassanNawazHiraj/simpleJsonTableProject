@@ -29,8 +29,10 @@ function showAllPeople() {
         var genderPicture = document.createElement("img");
         if (person.gender == "man") {
             genderPicture.src = "images/" + "man.png";
+            genderPicture.title = "man";
         } else {
             genderPicture.src = "images/" + "vrouw.png";
+            genderPicture.title = "vrouw";
         }
         genderCell.appendChild(genderPicture);
         var picture = document.createElement("img");
@@ -50,7 +52,7 @@ function showFemaleOnly() {
 function hideGender(gender) {
     var table = document.getElementById("tableBody");
     for (var i = 0, row; row = table.rows[i]; i++) {
-        var genderOfRow = row.cells[2].innerText;
+        var genderOfRow = row.cells[2].getElementsByTagName("img")[0].getAttribute("title");
         if (genderOfRow == gender) {
             row.style.display = "none";
         } else {
