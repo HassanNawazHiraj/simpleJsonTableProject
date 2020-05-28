@@ -1,0 +1,62 @@
+[
+    {
+        "forename": "Noah",
+        "name": "Smith",
+        "gender": "man",
+        "picture": "man1.jpg"
+    },
+    {
+        "forename": "Emma",
+        "name": "Johnson",
+        "gender": "vrouw",
+        "picture": "vrouw1.jpg"
+    },
+    {
+        "forename": "Sophia",
+        "name": "Wilson",
+        "gender": "vrouw",
+        "picture": "vrouw3.jpg"
+    },
+    {
+        "forename": "Mason",
+        "name": "Jones",
+        "gender": "man",
+        "picture": "man3.jpg"
+    },
+    {
+        "forename": "William",
+        "name": "Davis",
+        "gender": "man",
+        "picture": "man5.jpg"
+    },
+    {
+        "forename": "Liam",
+        "name": "Williams",
+        "gender": "man",
+        "picture": "man2.jpg"
+    },
+    {
+        "forename": "Olivia",
+        "name": "Miller",
+        "gender": "vrouw",
+        "picture": "vrouw2.jpg"
+    },
+    {
+        "forename": "Jacob",
+        "name": "Brown",
+        "gender": "man",
+        "picture": "man4.jpg"
+    },
+    {
+        "forename": "Ava",
+        "name": "Moore",
+        "gender": "vrouw",
+        "picture": "vrouw4.jpg"
+    },
+    {
+        "forename": "Isabella",
+        "name": "Taylor",
+        "gender": "vrouw",
+        "picture": "vrouw5.jpg"
+    }
+]
