@@ -5,14 +5,13 @@
     <script src="script.js" defer></script>
     <title>Geslachten</title>
     <link rel="icon" href="javascript.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <a href="#" data-gender-to-hide="man" id="men">men</a>
-    <a href="#" data-gender-to-hide="woman" id="women">women</a>
-    <a href="#" data-gender-to-hide="" id="allen">all</a>
-    <table>
+<body onload="loadAllPeople()">
+    <a href="#" data-gender-to-hide="man" id="men" onclick="showMaleOnly()">men</a>
+    <a href="#" data-gender-to-hide="woman" id="women" onclick="showFemaleOnly()">women</a>
+    <a href="#" data-gender-to-hide="" id="allen" onclick="loadAllPeople()">all</a>
+    <table id="mainTable">
         <thead>
             <tr>
                 <th id="forename">sirname</th>
@@ -21,8 +20,10 @@
                 <th id="picture">picture</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tableBody">
         </tbody>
     </table>
+
 </body>
+
 </html>
