@@ -26,7 +26,13 @@ function showAllPeople() {
 
         forenameCell.appendChild(document.createTextNode(person.forename));
         personCell.appendChild(document.createTextNode(person.name));
-        genderCell.appendChild(document.createTextNode(person.gender));
+        var genderPicture = document.createElement("img");
+        if (person.gender == "man") {
+            genderPicture.src = "images/" + "man.png";
+        } else {
+            genderPicture.src = "images/" + "vrouw.png";
+        }
+        genderCell.appendChild(genderPicture);
         var picture = document.createElement("img");
         picture.src = "images/" + person.picture;
         pictureCell.appendChild(picture);
@@ -34,14 +40,14 @@ function showAllPeople() {
 }
 
 function showMaleOnly() {
-    styleRow("man");
+    hideGender("vrouw");
 }
 
 function showFemaleOnly() {
-    styleRow("vrouw");
+    hideGender("man");
 }
 
-function styleRow(gender) {
+function hideGender(gender) {
     var table = document.getElementById("tableBody");
     for (var i = 0, row; row = table.rows[i]; i++) {
         var genderOfRow = row.cells[2].innerText;
